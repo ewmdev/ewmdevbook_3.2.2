@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Measurement Service Wave</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZBKS_WAVE_KPITOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZBKS_WAVE_KPI</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>Z_BKS_WAVE_SELSCREEN</FUNCNAME>
+     <SHORT_TEXT>Wave Selection Screen</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_DYNNR</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>DYNNR</TYP>
+      </RSIMP>
+     </IMPORT>
+     <CHANGING>
+      <RSCHA>
+       <PARAMETER>CV_VARIANT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>VARIANT</TYP>
+      </RSCHA>
+     </CHANGING>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_DYNNR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Number of the following screen</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>CV_VARIANT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>ABAP: Name of variant (without program name)</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>Z_WAVE_KPI_1</FUNCNAME>
+     <SHORT_TEXT>Wave KPI 1</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_LGNUM</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>/SCWM/LGNUM</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_VARIANT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>VARIANT</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_REPID</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>/SCWM/DE_MS_REPID</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EV_RESULT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>/SCWM/DE_MS_RESULT</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EV_UNIT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>/SCWM/DE_UNIT</TYP>
+      </RSEXP>
+     </EXPORT>
+     <EXCEPTION>
+      <RSEXC>
+       <EXCEPTION>ERROR</EXCEPTION>
+      </RSEXC>
+     </EXCEPTION>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_LGNUM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Warehouse Number/Warehouse Complex</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_VARIANT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>ABAP: Name of variant (without program name)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_REPID</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Report ID</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EV_RESULT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Result of a measurement service</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EV_UNIT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Unit of Measure</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ERROR</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Error</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
